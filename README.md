@@ -55,7 +55,7 @@ You need to have Docker and Docker-Compose installed on your local machine.
 1. Clone your forked repository (master branch) locally.
 2. CD to project root and run `docker-compose up`.
 3. Application will be accessible by the following address: `http://localhost:8000/`.
-4. Unit tests can be executed by running the following command: `docker exec -i -t <CONTAINER_NAME> sh -c "yarn test"`.
+4. Unit tests can be executed by running the following command: `docker exec -it <CONTAINER_NAME> yarn test`.
 5. `<CONTAINER_NAME>` can be checked by running the following command: `docker ps`. It will be something like `orbabracats_node_1_ed01e2011bb6`.
 
 ### Using Node and Yarn from your local machine
