@@ -36,7 +36,7 @@ Recruitment task description
 1. Fork this repository.
 2. Install application locally.
 3. Don't worry about older browsers. Your solution should support newest Firefox and Chrome.
-4. [*Optional*] For bonus points, do worry about other browsers. Set up webpack (or any bundler of your choice) with transpilation to ES5. You can also add some modern CSS extension, e.g. Sass (_Note: we already have babel config for jest._)
+4. [*Optional*] For bonus points, do worry about other browsers. Set up webpack (or any bundler of your choice) with transpilation to ES5. You can also add some modern CSS extension, e.g. Sass (_Note: we already have Babel config for jest._)
 5. Implement Bracats validation in `check` method placed in `public/js/check.js` file.
 6. Apply frontend changes so the application looks like on mockups. PSD file with the whole design can be found in `docs/project.psd`. Apply your own proposal for focus and hover effects style.
 7. Write unit tests to get more points. Two of them are already in `tests/check.test.js` file.
