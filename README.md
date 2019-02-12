@@ -40,7 +40,7 @@ Recruitment task description
 5. Don't worry about older browsers. Your solution should support newest Firefox and Chrome.
 6. Write unit tests to get more points. Two of them are already in `tests/check.test.js` file.
 7. Make your code SOLID to get even more points.
-8. (Optional) Set up Babel transpilation to ES5, so the code can work in older browsers. 
+8. (Optional) For bonus points, set up webpack (or any bundler of your choice) with transpilation to ES5, so the code can work in older browsers. Note: we already have babel config for jest.
 9. When you're done, create a Pull Request with your changes.
 
 Installation and running the application
