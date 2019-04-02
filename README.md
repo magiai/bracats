@@ -7,7 +7,7 @@ Overview
 The purpose of this repository is to check skills of candidates applying to Orba for a position of Frontend Developer.
 If you are here, you probably want to work with us :-).
 
-Bracats Checker is a simple application built using JavaScript ES6 and jQuery.
+Bracats Checker is a simple application built using JavaScript ES6.
 It allows user to input a string of brackets and check if the order of brackets is valid.
 
 - Instead of using classic brackets (`(`, `)`, `[`, `]`, `{`, `}`), application is using special "cat" brackets (aka "Bracats"): `cat`, `tac`, `CAT`, `TAC`, `cAt`, `tAc`.
