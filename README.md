@@ -8,7 +8,7 @@ The purpose of this repository is to check skills of candidates applying to Orba
 If you are here, you probably want to work with us :-).
 
 Bracats Checker is a simple application built using JavaScript ES6.
-It allows user to input a string of brackets and check if the order of brackets is valid.
+It allows user to input a string of brackets (only them) and check if the order of brackets is valid.
 
 - Instead of using classic brackets (`(`, `)`, `[`, `]`, `{`, `}`), application is using special "cat" brackets (aka "Bracats"): `cat`, `tac`, `CAT`, `TAC`, `cAt`, `tAc`.
 - A string of brackets is considered valid if all open brackets are matched with their corresponding closed bracket. For example: `cattacCATTACcAttAc` and (`CATcattacTAC`) would be considered valid, while `catTAC`, `cAtcattActac` and `catcatcattactac` would be considered invalid.
