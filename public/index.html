@@ -3,16 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>Bracats Checker</title>
-    <script type="module" src="js/app.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="cats bracket bracats"/>
+    <meta name="author" content="Dominika Adamska"/>
+    <!-- <link rel="icon" href="public/favicon.ico" type="image/x-icon" /> -->
+
+    <!--	[if lt IE 9]-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <!--	[endif]-->
+
     <link type="text/css" rel="stylesheet" href="css/styles.css" />
+    <script defer type="module" src="js/app.js"></script>
 </head>
+
 <body>
-    <h1>Bracats Checker</h1>
-    <form id="form">
-        <label for="input">String to check</label>
-        <input type="text" id="input" />
-        <input type="submit" value="Check" />
-    </form>
-    <div id="result"></div>
+  <section id="checker">
+
+    <h1 id="main-title">Bracats Checker</h1>
+
+    <div id="checker-container">
+
+      <form id="form" autocomplete="off">
+        <label class="screenreader" for="input">Type some bracats...</label>
+        <input type="text" id="bracats-input" placeholder="Type some bracats..." />
+        <button type="submit" id="check-button">Check!</button>
+      </form>
+
+      <div id="result" role="img" class="img" aria-label=""></div>
+
+    </div>
+
+  </section>
 </body>
 </html>
