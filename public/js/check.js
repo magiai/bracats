@@ -1,53 +1,36 @@
+import Stack from './stack.js';
+
 const check = (string) => {
 
   if (string.length === 0) true;
 
-  //check validity of the derived 3-letter words
-  const checkValidity = (bracats) => {
-    
+  if (string.length %2 === 0 && string.length %3 === 0) {
+
     const validBracats = {
       'tac' : 'cat',
       'TAC' : 'CAT',
       'tAc' : 'cAt'
     }
 
-    //return the last word to find the closing bracat
-    const peek = () => {
+    let bracats = new Stack();
 
-      if (checkArr.length === 0) {
-        return null;
-      }
+    let derivedWord = '';
 
-      return checkArr[checkArr.length - 1];
-    }
+    for (let i = 0; i < string.length; i +=3) {
 
-    let checkArr = [];
+      derivedWord = string.substr(i, 3);
 
-    for (let i = 0; i < bracats.length; i++) {
-
-      //check if current word matches the last one if so delete it
-      if (validBracats[bracats[i]] === peek()) {
-        checkArr.pop();
+      if (validBracats[derivedWord] === bracats.peek()) {
+        bracats.pop();
       } else {
-        checkArr.push(bracats[i]);
+        bracats.push(derivedWord);
       };
     }
 
-    return checkArr.length === 0
-  }
-  
-  if (string.length %2 === 0 && string.length %3 === 0) {
-    
-    let wordsArr = [];
-    
-    //divide a string to get 3-letter words
-    for (let i=0; i < string.length; i += 3) {
-      wordsArr.push(string.substr(i, 3));
-    }
-  
-    return checkValidity(wordsArr)
+    return bracats.isEmpty();
 
   } else {
+
     return false;
   }
 }
